@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/home.jpg");
+    background-size: cover; 
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center; 
+    padding: 0.625em 1.25em; 
+}
+
+.menu-icon {
+    width: 9.375em; 
+    height: auto; 
+    margin-right: 0.625em;
+}
+
+.menu-text ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
+    display: flex; 
+}
+
+.menu-text li {
+    text-decoration: none;
+    color: white; 
+    margin: 0 1.25em; 
+    cursor: pointer; 
+    font-size: 1em;
+    font-family: "DM Sans", sans-serif;
+}
+
+.menu-text a {
+    text-decoration: none;
+    color: white; 
+    cursor: pointer; 
+    font-size: 1em; 
+    font-family: "DM Sans", sans-serif;
+}
+
+.menu-text a:hover {
+    text-decoration: none;
+    color: #F7F36B;
+}
+
+.menu-text .active {
+    color: #F7F36B;
+}
+
+.menu-text li:hover {
+    text-decoration: none;
+    color: #F7F36B;
+    transition: 0.3s;
+}
+
+.menu-button {
+    background-color: #F7F36B;
+    color: black;
+    font-family: "DM Sans", bold;
+    font-weight: 750;
+    font-size: 0.9em; 
+    text-align: center;
+    padding: 0.8em 0.7em; 
+    border-radius: 0.9375em; 
+    cursor: pointer;
+    border: 0;
+    margin-left: 1.25em; 
+}
+
+.menu-button:hover {
+    background-color: #A29904;
+    transition: 0.3s;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.contact .contact-title{
+    font-size: 5em;
+    font-family: "DM Sans" , sans-serif;
+    color: white;
+    margin-top:0.3em;
+    margin-bottom: 0.005em;
+    
+}
+
+.contact .contact-p{
+    font-size: 2em;
+    font-family: "DM Sans" , sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 0.1em;
+    max-width: 25em;
+    
+}
+
+.contact .contact-method{
+    font-size: 1.5em;
+    font-family: "DM Sans" , sans-serif;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin: 1em;
+    text-decoration: none;
+
+}
+
+.contact .contact-method:hover{
+    color:#F7F36B;
+}
+
+.contact .contact-insta{
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+   
+
+    .menu-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .menu-button {
+        margin-top: 1em;
+        margin-left: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

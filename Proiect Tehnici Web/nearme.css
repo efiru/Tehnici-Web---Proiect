@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/home.jpg");
+    background-size: cover; 
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center; 
+    padding: 0.625em 1.25em; 
+}
+
+.menu-icon {
+    width: 9.375em; 
+    height: auto; 
+    margin-right: 0.625em;
+}
+
+.menu-text ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
+    display: flex; 
+}
+
+.menu-text li {
+    text-decoration: none;
+    color: white; 
+    margin: 0 1.25em; 
+    cursor: pointer; 
+    font-size: 1em;
+    font-family: "DM Sans", sans-serif;
+}
+
+.menu-text a {
+    text-decoration: none;
+    color: white; 
+    cursor: pointer; 
+    font-size: 1em; 
+    font-family: "DM Sans", sans-serif;
+}
+
+.menu-text a:hover {
+    text-decoration: none;
+    color: #F7F36B;
+}
+
+.menu-text .active {
+    color: #F7F36B;
+}
+
+.menu-text li:hover {
+    text-decoration: none;
+    color: #F7F36B;
+    transition: 0.3s;
+}
+
+.menu-button {
+    background-color: #F7F36B;
+    color: black;
+    font-family: "DM Sans", bold;
+    font-weight: 750;
+    font-size: 0.9em; 
+    text-align: center;
+    padding: 0.8em 0.7em; 
+    border-radius: 0.9375em; 
+    cursor: pointer;
+    border: 0;
+    margin-left: 1.25em; 
+}
+
+.menu-button:hover {
+    background-color: #A29904;
+    transition: 0.3s;
+}
+
+.near-gyms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#map {
+    height: 25em;
+    width: 50em;
+    margin-top: 20px;
+    border-radius: 12px;
+    margin-bottom: 1em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#location-input {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+#location-input input {
+    color: white;
+    background-color: #403f3e;
+    border-radius: 12px;
+    border: 0;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    width: 25em;
+}
+
+#location-input input::placeholder {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1em;
+}
+
+#location-input .location-button {
+    border-radius: 12px;
+    border: 0;
+    background-color: #403f3e;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+#location-input .location-button:hover {
+    background-color: gray;
+}
+
+.gym-info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #333333;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    text-decoration: none;
+    max-width: fit-content;
+    margin-bottom: 1em;
+}
+
+.gym-info h3 {
+    color: #F7F36B;
+}
+
+.gym-info a {
+    text-decoration: none;
+    color: #F7F36B;
+    max-width: fit-content;
+}
+
+.gym-info a:hover {
+    color: #A29904;
+}
+
+.gym-info:last-child {
+    border-bottom: none;
+}
+
+.location-title {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 3em;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    text-align: center;
+}
+
+.location-button {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+}
+
+.location-p {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+}
+
+#gym-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 0;
+    border-radius: 8px;
+    max-width: 1000px;
+    background-color: transparent;
+}
+
+footer {
+    background-color: #F7F36B;
+    display: flex;
+    height: 18.75em; 
+    margin-top: 15em;
+}
+
+footer .about-title {
+    font-family: "DM Sans", sans-serif;
+    margin-left: 0.7em;
+}
+
+footer .about-image {
+    width: 10em; 
+    height: auto;
+    border-radius: 0.75em; 
+}
+
+footer .about-p {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    margin-left: 1.25em;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    #map {
+        width: 90%;
+        height: 20em;
+    }
+
+    .menu-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .menu-button {
+        margin-top: 1em;
+        margin-left: 0;
+    }
+
+    #location-input input {
+        width: 70%;
+    }
+
+    #location-input {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    #gym-details {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .location-title {
+        font-size: 2.5em;
+    }
+
+    .location-p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #map {
+        width: 100%;
+        height: 18em;
+    }
+
+    .location-title {
+        font-size: 2em;
+    }
+
+    .location-p {
+        font-size: 1em;
+    }
+
+    .gym-info {
+        width: 100%;
+    }
+
+    #gym-details {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
