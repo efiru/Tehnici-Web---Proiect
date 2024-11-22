@@ -1,4 +1,4 @@
-/* General Reset */
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body {
     background-attachment: fixed;
 }
 
-/* Header */
+
 header {
     display: flex;
     flex-direction: column;
@@ -103,20 +103,20 @@ header {
     font-family: "DM Sans", bold;
     font-weight: 500;
     max-width: 50em;
-    margin: 0 auto; /* Center the text block */
-    text-align: center; /* Center the text inside the block */
+    margin: 0 auto; 
+    text-align: center; 
     color: gray;
     margin-top: 0.625em;
-    padding: 0 1em; /* Add some padding for better spacing */
+    padding: 0 1em; 
 }
 
-/* Swiper */
+
 .swiper {
     width: 100%;
     max-width: 75em;
     margin: 0 auto;
     padding: 1em;
-    position: relative;  /* Fix for the button positioning */
+    position: relative;  
 }
 
 .swiper-wrapper {
@@ -234,11 +234,11 @@ header {
     color: black !important;
 }
 
-/* Button Under Swiper */
+
 .discover {
     text-align: center;
-    margin-top: 3em;  /* Added space between swiper and button */
-    position: relative;  /* Ensure it doesn't overlap with swiper buttons */
+    margin-top: 3em;  
+    position: relative;  
     z-index: 10;
 }
 
@@ -263,7 +263,7 @@ header {
 .bottom-text {
     text-align: center;
     margin-top: 7em;
-    font-size: 2em;  /* Space between button and text */
+    font-size: 2em;  
     color: white;
     font-family: "DM Sans", bold;
 }
@@ -275,11 +275,11 @@ header {
 .bottom-text .bottom-description {
     font-size: 1.25em;
     max-width: 80%;
-    margin: 1em auto;  /* Added margin to space the text out */
+    margin: 1em auto;  
     color: gray;
 }
 
-/* Gallery */
+
 
 
 
@@ -357,7 +357,7 @@ footer .about-p {
     margin-left: 1.25em;
 }
 
-/* Media Queries */
+
 @media (max-width: 768px) {
     .swiper-wrapper {
         flex-wrap: wrap;
