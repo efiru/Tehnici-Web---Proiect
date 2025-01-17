@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("images/home.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center; 
+  padding: 0.625em 1.25em; 
+}
+
+.menu-icon {
+  width: 9.375em; 
+  height: auto; 
+  margin-right: 0.625em;
+}
+
+.menu-text ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0; 
+  display: flex; 
+}
+
+.menu-text li {
+  text-decoration: none;
+  color: white; 
+  margin: 0 1.25em; 
+  cursor: pointer; 
+  font-size: 1em;
+  font-family: "DM Sans", sans-serif;
+}
+
+.menu-text a {
+  text-decoration: none;
+  color: white; 
+  cursor: pointer; 
+  font-size: 1em; 
+  font-family: "DM Sans", sans-serif;
+}
+
+.menu-text a:hover {
+  text-decoration: none;
+  color: #F7F36B;
+}
+
+.menu-text .active {
+  color: #F7F36B;
+}
+
+.menu-text li:hover {
+  text-decoration: none;
+  color: #F7F36B;
+  transition: 0.3s;
+}
+
+.menu-button {
+  background-color: #F7F36B;
+  color: black;
+  font-family: "DM Sans", bold;
+  font-weight: 750;
+  font-size: 0.9em; 
+  text-align: center;
+  padding: 0.8em 0.7em; 
+  border-radius: 0.9375em; 
+  cursor: pointer;
+  border: 0;
+  margin-left: 1.25em; 
+  text-decoration: none;
+}
+
+.menu-button:hover {
+  background-color: #A29904;
+  transition: 0.3s;
+}
+
+h1 {
+  font-family: "DM Sans", bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+form label {
+  font-family: "DM Sans", bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-weight: 600;
+}
+
+form input {
+  font-family: "DM Sans", bold;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+form button {
+  font-family: "DM Sans", bold;
+  background-color: #F7F36B;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #A29904;
+}
+
+#loginSection,
+#registerSection,
+#logoutSection {
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+}
+
+#logoutSection h2 {
+  font-family: "DM Sans", bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#logoutButton {
+  font-family: "DM Sans", bold;
+  background-color: #f44336;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#logoutButton:hover {
+  background-color: #d32f2f;
+}
+
+#signUpButton,
+#signInButton {
+  background-color: #F7F36B;
+  color: black;
+  font-family: "DM Sans", bold;
+  font-weight: 750;
+  font-size: 0.9em; 
+  text-align: center;
+  padding: 0.8em 0.7em; 
+  border-radius: 0.9375em; 
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+#signUpButton:hover,
+#signInButton:hover {
+  background-color: #A29904;
+}

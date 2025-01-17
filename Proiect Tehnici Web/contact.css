@@ -28,6 +28,7 @@ header {
     padding: 0;
     margin: 0; 
     display: flex; 
+    
 }
 
 .menu-text li {
@@ -129,6 +130,72 @@ header {
     vertical-align: middle;
 }
 
+#formular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#403f3e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 15px;
+    font-family: "DM Sans" , sans-serif;
+}
+
+label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+input[type="email"],
+textarea {
+    width: 100%; 
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "DM Sans" , sans-serif;
+}
+
+textarea {
+    resize: none; 
+}
+
+button {
+    font-family: "DM Sans" , sans-serif;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    background-color: #F7F36B;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #A29904
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media (max-width: 768px) {
    
 
